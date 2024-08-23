@@ -36,6 +36,6 @@ jobs:
           uses: google-github-actions/deploy-cloudrun@v1
           with:
             image: europe-central2-docker.pkg.dev/mrbllab-test/websites/move.mrbllab.com:${{ github.sha }}
-            service: move.mrbllab.com
+            service: move-mrbllab-com
             project_id: mrbllab-test
             region: europe-central2
