@@ -1,0 +1,41 @@
+@import '../colours';
+
+.hero {
+  display: block;
+  position: relative;
+  background-position: center;
+  background-image: url('https://static.mrbllab.com/images/move-website-hero.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__heading {
+    font-family: "Monument Extended", sans-serif;
+    font-weight: bold;
+    color: $brown;
+  }
+}
+
+@media (orientation: landscape) {
+  .hero {
+    width: 75vw;
+    height: 75vh;
+
+    &__heading {
+      font-size: 15vw;
+    }
+  }
+}
+
+@media (orientation: portrait) {
+  .hero {
+    width: 75vw;
+    height: 75vh;
+
+    &__heading {
+      font-size: 25vw;
+    }
+  }
+}
