@@ -80,6 +80,7 @@ h2 {
 section {
   min-height: 100vh;
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -92,6 +93,14 @@ section {
   .padded {
     width: 75%;
   }
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  color: #d0d1d2;
+  font-size: 0.8rem;
+  padding-bottom: 0.5rem;
 }
 
 .hero {
