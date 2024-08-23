@@ -1,1 +1,89 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Monument Extended";
+  src: url("https://static.mrbllab.com/fonts/monument-extended/MonumentExtended-Regular.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Monument Extended";
+  src: url("https://static.mrbllab.com/fonts/monument-extended/MonumentExtended-Ultrabold.otf")
+    format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+$brown: #44242d;
+$red: #a8534b;
+$beige: #ec9d75;
+$yellow: #f9d697;
+$acidic: #dce6a7;
+$green: #9adfb0;
+$blueish: #57cbab;
+$blue: #38a793;
+
+h1 {
+  font-family: "Monument Extended", sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  letter-spacing: 0.15rem;
+  padding: 0;
+  margin: 0;
+
+  &.highlight {
+    background-color: $green;
+    display: inline;
+    line-height: 2rem;
+  }
+}
+
+h2 {
+  font-family: "Monument Extended", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  padding: 0;
+  margin: 0;
+
+  &.highlight {
+    background-color: $green;
+    display: inline;
+    line-height: 2rem;
+  }
+}
+
+.hero {
+  display: block;
+  background-position: center;
+  background-image: url("https://static.mrbllab.com/images/move-website-hero.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &.centered {
+    align-items: center;
+  }
+}
+
+@media (orientation: landscape) {
+  .hero {
+    width: 75vw;
+    height: 75vh;
+  }
+}
+
+@media (orientation: portrait) {
+  .hero {
+    width: 90vw;
+    height: 75vh;
+  }
+}
