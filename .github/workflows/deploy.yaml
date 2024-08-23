@@ -30,7 +30,7 @@ jobs:
         - name: Push image
           run: |
             gcloud auth configure-docker europe-central2-docker.pkg.dev
-            europe-central2-docker.pkg.dev/mrbllab-test/websites/move.mrbllab.com:${{ github.sha }}
+            docker push europe-central2-docker.pkg.dev/mrbllab-test/websites/move.mrbllab.com:${{ github.sha }}
 
         - name: Deploy to Cloud Run
           uses: google-github-actions/deploy-cloudrun@v1
