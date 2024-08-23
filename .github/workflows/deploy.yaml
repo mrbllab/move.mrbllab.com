@@ -38,4 +38,4 @@ jobs:
             image: europe-central2-docker.pkg.dev/mrbllab-test/websites/move.mrbllab.com:${{ github.sha }}
             service: move-mrbllab-com
             project_id: mrbllab-test
-            region: europe-central2
+            region: europe-west1
