@@ -20,6 +20,9 @@ body {
   color: $brown;
   font-family: sans-serif;
   font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 a {
@@ -107,7 +110,7 @@ section {
   display: block;
   position: relative;
   background-position: center;
-  background-image: url('https://storage.googleapis.com/static.mrbllab.com/images/move-website-hero.png');
+  background-image: url("https://storage.googleapis.com/static.mrbllab.com/images/move-website-hero.png");
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
@@ -118,8 +121,15 @@ section {
   &__heading {
     font-family: "Monument Extended", sans-serif;
     font-weight: bold;
+    letter-spacing: 5vw;
     color: $brown;
   }
+}
+
+.collapsible {
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: 1fr 1fr;
 }
 
 @media (orientation: landscape) {
@@ -131,6 +141,12 @@ section {
       font-size: 15vw;
     }
   }
+
+  .collapsible {
+    div:not(:last-child) {
+      padding-right: 2rem;
+    }
+  }
 }
 
 @media (orientation: portrait) {
@@ -139,7 +155,13 @@ section {
     height: 75vh;
 
     &__heading {
-      font-size: 25vw;
+      font-size: 20vw;
+      letter-spacing: 5vw;
+      margin-right: -5vw;
     }
+  }
+
+  .collapsible {
+    grid-template-columns: 1fr;
   }
 }
