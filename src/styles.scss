@@ -89,6 +89,10 @@ section {
   align-items: center;
   padding: 1rem 2rem;
 
+  &.constrained {
+    max-width: 900px;
+  }
+
   .centered {
     text-align: center;
   }
@@ -134,6 +138,7 @@ section {
 
 @media (orientation: landscape) {
   .hero {
+    margin-top: 4rem;
     width: 75vw;
     height: 75vh;
 
